@@ -1,0 +1,2 @@
+# SubjectDetector
+Smart Flashcard System
