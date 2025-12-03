@@ -34,8 +34,8 @@ app.post('/flashcard', async (req, res) => {
 });
 
 
-app.get('/get-subject/:student_id/:limit', async (req, res) => { 
-        const {student_id,limit}= req.params; 
+app.get('/get-subject', async (req, res) => { 
+        const { student_id, limit =5} = req.query;
         if (!student_id)
              return res.status(400).json({ message: "Missing student_id" });
 
